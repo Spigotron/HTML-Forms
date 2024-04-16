@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Form</title>
+</head>
+<body>
+    </header>
+    <main>
+        <h3>HTML Form</h3>
+        
+        <form action="/submit" method="POST">
+
+            <label for="email">Email:</label>
+            <input type="email" name="email" autocomplete="on" placeholder="danielcopeland@gmail.com" required>
+            <div role="alert" aria-live="assertive"></div>
+
+            <label for="quantity">Quantity:</label>
+            <input type="number" name='quantity' min="5" max="500" step="5" placeholder="125">
+
+            <br>
+            
+            <label for="date">Date:</label>
+            <input type="date" name="date" min="01-01-1900" max="12-31-2024">
+
+            <br>
+
+            <label for="range">Range:</label>
+            <input type="range" name="range" min="1" max="100">
+
+            <p>What is your level of programming expertise?</p>
+            <input type="radio" name="level" value="Beginner">
+            <label for="level">Beginner</label>
+            <br>
+            <input type="radio" name="level" value="Intermediate">
+            <label for="level">Intermediate</label>
+            <br>
+            <input type="radio" name="level" value="Advanced">
+            <label for="level">Advanced</label>
+            <div role="alert" aria-live="assertive"></div>
+
+            <p>What are your preferred development platforms?</p>
+            <input type="checkbox" name="web" values="yes">
+            <label for="platform">Web</label>
+            <br>
+            <input type="checkbox" name="mobile" values="yes">
+            <label for="platform">Mobile</label>
+            <br>
+            <input type="checkbox" name="desktop" values="yes">
+            <label for="platform">Desktop</label>
+
+            <br>
+            <br>
+
+            <button type="submit"><a href='/success.html'>Submit</a></button>
+
+        </form>
+
+</body>
+</html>
